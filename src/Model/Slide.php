@@ -2,8 +2,6 @@
 
 namespace Dynamic\FlexSlider\Model;
 
-use DNADesign\Elemental\Forms\TextCheckboxGroupField;
-use Dynamic\FlexSlider\Interfaces\SlideInterface;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\ORM\DataObject;
 use SilverStripe\Security\InheritedPermissions;
@@ -21,7 +19,7 @@ use SilverStripe\Versioned\Versioned;
  * @mixin Versioned
  * @mixin InheritedPermissionsExtension
  */
-class Slide extends DataObject implements PermissionProvider, SlideInterface
+class Slide extends DataObject implements PermissionProvider
 {
     /**
      * The Create permission
